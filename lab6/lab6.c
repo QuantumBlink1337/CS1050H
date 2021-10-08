@@ -95,6 +95,8 @@ void invertArray(int array[], int size, int invertedArray[]) {
 // prints the arrays as one line
 void printArrays(int array1[], int array2[], int array3[], int size) {
     for (int i = 0; i <= size-1; i++) {
+        
+        printf("     ");
         printf("Array 1 Index %d: %d | Array 2 Index %d: %d | Array 3 (product) Index %d: %d\n", i, array1[i], i, array2[i], i, array3[i]);
     }
 }
