@@ -5,9 +5,7 @@ int initializeArray(int array[], int begin, int end, int increment);
 int printArray(int array[], int size);
 
 int main(void) {
-    //int size = 0;
     int myArray[SIZE];
-    // this may not work, but I am curious so I want to try it
     printArray(myArray, initializeArray(myArray, 2, 20, 2));
     printArray(myArray, initializeArray(myArray, 1, 97, 3));
     return 0;
