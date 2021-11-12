@@ -43,7 +43,7 @@ int main(void) {
     */
 
     size = initializeArray(array1, 22, 0, -2);
-    initializeArray(array2, 84, 0, -7);
+    initializeArray(array2, 84, 7, -7);
     multiplyArrayTogether(array1, array2, array3, size);
     printf("Second set of arrays\n");
     printArrays(array1, array2, array3, size);
@@ -95,7 +95,7 @@ void invertArray(int array[], int size, int invertedArray[]) {
 // prints the arrays as one line
 void printArrays(int array1[], int array2[], int array3[], int size) {
     for (int i = 0; i <= size-1; i++) {
-        
+        // I know this isn't ideal but I couldn't figure out how to add spaces using a placeholder (or even if it's possible given my string)
         printf("     ");
         printf("Array 1 Index %d: %d | Array 2 Index %d: %d | Array 3 (product) Index %d: %d\n", i, array1[i], i, array2[i], i, array3[i]);
     }
